@@ -9,4 +9,7 @@
 <h2>Map</h2>
 <iframe src="https://thingspeak.com/channels/1458413/maps/channel_show" 
         style="border:none;" height="300px" width="500px"></iframe>
-
+</body>
+<?php
+        echo "123";
+?>
