@@ -11,14 +11,8 @@
 </head>
 <body onload="JavaScript:timedRefresh(15000);"><BR>
     <?php
-    $arrContextOptions=array(
-        "ssl"=>array(
-            "verify_peer"=>false,
-            "verify_peer_name"=>false,
-        ),
-    );  
-    //ดึง json จาก API 
-$response = file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2", false, stream_context_create($arrContextOptions));
+     
+$response = file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2");
 $json = json_decode($response);
 //เลือกแค่ data
 $name = $json->channel->name;
