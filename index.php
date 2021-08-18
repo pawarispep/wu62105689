@@ -10,6 +10,9 @@
         style="border:none;" height="300px" width="500px"></iframe>
                                  </div>
                                 </div>
+                        </div>
+                </div>
+        </div>
 <?php
         $api=file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2");
         $json=json_decode($api);
