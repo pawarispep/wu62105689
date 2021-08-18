@@ -13,7 +13,7 @@
         $temperature=$response_data->feeds[1]->field2;
         
         
-        echo "$response_data"; 
+        
         echo "Humidity: ".$humidity;
         echo "Temperature: ".$temperature;
 ?>
