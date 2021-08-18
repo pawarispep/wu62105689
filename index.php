@@ -29,7 +29,7 @@
         $temperature=$json->feeds[1]->field2;     
 ?>        
 <div class="col-sm-5">
-        <h3>Data Lastest</h3>
+        <h3 align= "RIGHT">Data Lastest</h3>
         <div class="container">
         <h3>Humidity: <?php echo $humidity; ?><br>
         Temperature: <?php echo $temperature; ?><br>
