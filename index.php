@@ -13,13 +13,6 @@ print_r($field1);
 $field2 = $xml->xpath('//feed/field2'); //gets all <field2/> whose parent is <feed/>
 print_r($field2);
                 
-                
-                
-                
-                
-                
-                
-                
         /*$api_url='https://api.thingspeak.com/channels/1458413/feeds.json?results=2';
         $json_data=file_get_content($api_url);
         $response_data=json_decode($json_data);
