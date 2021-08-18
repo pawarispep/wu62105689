@@ -17,6 +17,6 @@
         $humidity=$json->feeds[1]->field1;
         $temperature=$json->feeds[1]->field2;
 
-        echo "Humidity: " $humidity;
-        echo "Temperature: " $temperature;
+        echo $humidity;
+        echo $temperature;
 ?>
