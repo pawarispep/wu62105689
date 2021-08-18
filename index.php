@@ -13,7 +13,7 @@
                 <h2>Humidity</h2>
                 <div class ="container">
                 <div class="row">
-<div class="col-sm-5">
+<div class="col-sm-5" align="center">
         <h3>Data Lastest</h3>
         <div class="container">
         <h3>Humidity: <?php echo $humidity; ?><br>
