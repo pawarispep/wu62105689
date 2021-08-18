@@ -7,8 +7,7 @@
 <iframe src="https://thingspeak.com/channels/1458413/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" 
         style="border:none;" height="300px" width="500px"></iframe>
         </div>
-        </div>
-        </div>
+        
 <?php
         $api=file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2");
         $json=json_decode($api);
@@ -22,7 +21,8 @@
         <h3 align= "center">Humidity: <?php echo $humidity; ?><br>
         Temperature: <?php echo $temperature; ?><br></h3>
 </div>                               
-                         
+      </div> 
+                </div> 
 <h2>Temperature</h2>
 <iframe src="https://thingspeak.com/channels/1458413/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" 
         style="border:none;" height="300px" width="500px"></iframe>                                 
