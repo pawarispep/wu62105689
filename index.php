@@ -18,7 +18,7 @@
         ),
     );  
     //ดึง json จาก API 
-$response = file_get_contents("https://api.thingspeak.com/channels/1458412/feeds.json?results=2", false, stream_context_create($arrContextOptions));
+$response = file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2", false, stream_context_create($arrContextOptions));
 $json = json_decode($response);
 //เลือกแค่ data
 $name = $json->channel->name;
