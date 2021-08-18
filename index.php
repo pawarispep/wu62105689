@@ -9,12 +9,10 @@
 <h2>Map</h2>
 <iframe src= "https://thingspeak.com/channels/1458413/maps/channel_show" style="border:none;" height="500px" width="500px"></iframe>  
 </body>
+<?php
+        echo "123";
+?>
+      
 
-       $api_url="https://api.thingspeak.com/channels/1458413/feeds.json?results=2";
-        $json_data=file_get_contents($api_url);
-        $response_data = json_decode($json_data);
-        
-
-}
         
 
