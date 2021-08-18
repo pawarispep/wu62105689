@@ -11,5 +11,11 @@
         style="border:none;" height="300px" width="500px"></iframe>
 </body>
 <?php
-        echo "123";
+        $api=file_get_contents("https://api.thingspeak.com/channels/1458413/feeds.json?results=2");
+        $json=json_decode($api);
+        
+        $humidity=$json->feeds[1]->field1;
+        $temperature=$json->feeds[1]->field2;
+
+        echo $humidity;
 ?>
