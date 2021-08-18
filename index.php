@@ -12,15 +12,8 @@
 <?php
        $api_url="https://api.thingspeak.com/channels/1458413/feeds.json?results=2";
         $json_data=file_get_contents($api_url);
-        $response_data=json_decode($json_data);
-        $user_data=$response_data->data;
-        $user_data=array_slice($user_data,0,9);
+        $response_data = json_decode($json_data);
         
-        foreac($user_data as $user){
-        echo "Humidity: ".user->humidity;
-        echo "<br / >";
-        echo "Temperature: ".user->temperature;
-        echo "<br / >";
 
 }
         
