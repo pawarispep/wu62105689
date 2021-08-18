@@ -22,3 +22,4 @@
         echo "Temperature: ".user->temperature;
         echo "<br / >";
 
+}
