@@ -8,10 +8,11 @@
         $api_url="https://api.thingspeak.com/channels/1458413/feeds.json?results=2";
         $json_data=file_get_content($api_url);
         $response_data=json_decode($json_data);
-        $response_data->feeds[1];
-        $data=$response_data->feeds[1];
-        $humidity=$data->field1;
-        $temperature=$data->field2;
+        
+        $humidity=$response_data->feeds[1]->field1;
+        $temperature=$response_data->feeds[1]->field2;
+        
+        
         echo "$response_data"; 
         echo "Humidity: ".$humidity;
         echo "Temperature: ".$temperature;
