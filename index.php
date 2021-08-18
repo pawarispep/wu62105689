@@ -13,6 +13,13 @@
                 <h2>Humidity</h2>
                 <div class ="container">
                 <div class="row">
+<div class="col-sm-5">
+        <h3>Data Lastest</h3>
+        <div class="container">
+        <h3>Humidity: <?php echo $humidity; ?><br>
+        Temperature: <?php echo $temperature; ?><br></h3>
+                              
+                </div> 
 <iframe src="https://thingspeak.com/channels/1458413/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" 
         style="border:none;" height="300px" width="500px"></iframe>
                 </div>
@@ -29,13 +36,7 @@
                 </div>
                 </div>       
                         
-<div class="col-sm-5">
-        <h3>Data Lastest</h3>
-        <div class="container">
-        <h3>Humidity: <?php echo $humidity; ?><br>
-        Temperature: <?php echo $temperature; ?><br></h3>
-                              
-                </div> 
+
                 </div>            
                 </div> 
                 </div>     
