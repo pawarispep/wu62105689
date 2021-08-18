@@ -8,9 +8,9 @@
 <h2>Map</h2>
 <iframe src= "https://thingspeak.com/channels/1458413/maps/channel_show" style="border:none;" height="500px" width="500px"></iframe>
 
-<?php
+
         $url_key="https://api.thingspeak.com/channels/1458413/fields/1.json?results=2";
         $obj=json_decode($url_key);
         foreach($obj as $key => $value){
                 echo $key . : .$value . "<br>";        
-        ?>
+        
