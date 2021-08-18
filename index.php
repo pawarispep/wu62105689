@@ -13,6 +13,7 @@
         $url_key="https://api.thingspeak.com/channels/1458413/feeds.json?results=2";
         $obj=json_decode($url_key);
         foreach($obj as $key => $value){
-                echo $key . : .$value . "<br>";        
+                echo $key . : .$value . "<br>";
+        }
         
 ?>
